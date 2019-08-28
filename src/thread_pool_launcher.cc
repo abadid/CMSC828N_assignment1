@@ -102,6 +102,10 @@ void* thread_pool_launcher::executor_fn(void *arg)
                 /* exec request */
                 st->_req->execute();
                 fetch_and_increment(st->_txns_executed);
+
+                /*
+                 * YOUR CODE HERE
+                 */
         }
         return NULL;
 }
